@@ -37,8 +37,7 @@ project:
       children:
         - file: Content/1_intro.md
         - file: Content/2_jup_nb.ipynb
-        - file: Content/2_features.md
-        - file: Content/3_stylesheet.md
+        - file: Content/3_features.md
         - file: Content/4_pdfoutput.md
     
 site:
