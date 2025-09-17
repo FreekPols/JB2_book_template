@@ -24,9 +24,7 @@ authors:
 version: 0.0.2
 license: MIT
 tags:
-  - preprint
-  - article
-  - paper
+  - book 
 thumbnail: ./examples/pixels/files/screenshot.png
 github: https://github.com/myst-templates/lapreprint-typst
 doc:
