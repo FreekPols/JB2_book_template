@@ -44,9 +44,9 @@ project:
 site:
   template: book-theme
   options:
-    favicon: favicon.ico
+    favicon: favicon.svg
     style: ./css/custom.css
-    logo: favicon.svg
+    logo: logo.svg
     folders: false
   
   actions:

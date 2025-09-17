@@ -1,5 +1,10 @@
 # JB 2 Template
 
+- description of template
+- run workflow
+- see output
+ 
+
 ## PDF met Latex of Typst 
 
 Om aan te geven welk type PDF je wilt bouwen, zet je dit in je `myst.yml` bestand onder `exports`.  
