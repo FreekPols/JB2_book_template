@@ -24,15 +24,15 @@ Some caption
 ```
 :::
 ````
-A Jupyter Book made with MyST requires a collection of markdown and Jupyter notebooks, which can then be exported to PDF, HTML, and even Word.
+A Jupyter Book 2 made with MyST requires a collection of markdown and Jupyter notebooks, which can then be exported to PDF, HTML, and even Word.
 
 ## Structure
 We can distinguish between two structures: that of the book's content (a collection of different documents), and the (internal) structure of the chapters.
 
 ### Table of Contents
-The software we use automatically builds a table of contents (ToC) in alphabetical order. But you can also specify the ToC yourself. This is best done offline (`myst init --toc`), see the [MyST documentation](https://mystmd.org/guide/table-of-contents#toc-format-legacy).
+The software we use automatically builds a table of contents (ToC) in alphabetical order. But you can also specify the ToC yourself. This is best done offline (`jupyter init --toc`), see the [MyST documentation](https://mystmd.org/guide/table-of-contents#toc-format-legacy).
 
-### Chapters
+### Chapters    
 To distinguish between chapter, section, and subsection (and further), use a number of `#` symbols, as shown below.
 
 ```markdown

@@ -2,12 +2,15 @@
 version: 1
 project:
   id: 7204695b-7485-4989-863c-16cf6e4db155
-  title: Template MystMD book
+  title: Template Jupyter Book 2
   # description:
   # keywords: []
   authors: 
     - Freek Pols
     - Luuk Fröling
+    - Robert Lanzafame
+    - Kirstie Whitaker
+
   # abstract: Optional
   date: 2025-17-09
   github: https://github.com/FreekPols/JB2_book_template # Change this URL to your GitHub repository
@@ -39,6 +42,7 @@ project:
     - file: Content/4_pdfoutput.md
     - file: Lessons/Your_turn.md
       children:
+        - file: Lessons/Lesson0.md
         - file: Lessons/Lesson1.md
         - file: Lessons/Lesson2.md
     

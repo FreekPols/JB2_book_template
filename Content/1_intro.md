@@ -1,6 +1,6 @@
 # Introduction
 
-This is the MySTMD template to produce your own online interactive textbook. 
+This is the *Jupyter Book 2 Headstart Template* to quickly and easily produce your own online interactive textbook. 
 
 ## Set up your own repository
 Follow these instruction to use this template for your own book.
