@@ -38,6 +38,9 @@ jobs:
             exit 1
           fi
 
+
+
+          
       # Commit exports only if build succeeded
       - name: Commit and push exports
         if: success()   # only run if previous steps succeeded

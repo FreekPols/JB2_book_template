@@ -10,20 +10,20 @@ project:
     - Luuk Fröling
   # abstract: Optional
   date: 2025-17-09
-  github: https://github.com/.. # Change this URL to your GitHub repository
+  github: https://github.com/FreekPols/JB2_book_template # Change this URL to your GitHub repository
 
   plugins: 
     # links to GH
 
   # exports and downloads
-  downloads:
-    - id: output-pdf
   exports:
     - format: typst
       template: ./pdf_template_book #plain_typst_book
       output: Exports/book.pdf
       id: output-pdf
-
+  downloads:
+    - id: output-pdf
+    
   # Jupyter Notebook configuration
   jupyter:
     binder:
@@ -44,11 +44,11 @@ project:
 site:
   template: book-theme
   options:
-    favicon: favicon.svg
+    favicon: favicon.svg      # path to your favicon
     style: ./css/custom.css
-    logo: logo.svg
+    logo: logo.svg            # path to your logo, shown top left at site
     folders: false
   
   actions:
     - title: report issue
-      url: https://github.com/..
+      url: https://github.com/FreekPols/JB2_book_template/issues
