@@ -1,11 +1,11 @@
 # Introduction
 
-This is the TUD JB2 template to produce your own online interactive textbook. 
+This is the MySTMD template to produce your own online interactive textbook. 
 
 ## Set up your own repository
 Follow these instruction to use this template for your own book.
 
-1. Go to this [repository](https://github.com/TUD-JB-Templates/JB2/template.git)
+1. Go to this [repository](https://github.com/FreekPols/JB2_book_template.git)
 2. Click the green button `use this template` and click `create a new repository`.
 3. Choose a proper name of your repository (this will be also part of your URL!) and choose the option `public`.
 4. In your repository, click on `settings` and in the left menu on Pages` and choose `Github actions`
