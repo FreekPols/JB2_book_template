@@ -20,7 +20,7 @@ project:
     - id: output-pdf
   exports:
     - format: typst
-      template: ./plain_typst_book
+      template: ./pdf_template_book #plain_typst_book
       output: Exports/book.pdf
       id: output-pdf
 
@@ -46,7 +46,7 @@ site:
   options:
     favicon: favicon.ico
     style: ./css/custom.css
-    logo: #logo.png
+    logo: favicon.svg
     folders: false
   
   actions:
