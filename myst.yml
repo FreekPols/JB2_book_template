@@ -21,7 +21,7 @@ project:
   exports:
     - format: typst
       template: ./plain_typst_book
-      output: exports/book.pdf
+      output: Exports/book.pdf
       id: output-pdf
 
   # Jupyter Notebook configuration

@@ -38,12 +38,6 @@ width: 100%
 The output of the template book is the same as your book.
 ```
 
-<!-- 
-```{experiment} 123
-admonitions are cool
-``` 
--->
-
 
 
 
@@ -52,37 +46,17 @@ admonitions are cool
 test 123
 ``` 
 
-```{example} Here is an example
-testing conversion
-```
 
-```{intermezzo} And an intermezzo
-intermezzo
-```
+
 
 ```{iframe} https://www.youtube.com/embed/oL4-ipL62pQ?si=3G_VbzWoJ2cFF_A3
 :name: vid_1
 
-a great movei
+a great movie
 ```
 
 
 
-```{iframe} https://www.youtube.com/watch?v=oL4-ipL62pQ&t
-:name: vid2
-
-option without embed link
-```
 
 
-````{example} Hier een neseted voorbeeld
-blabla
 
-
-```{figure} ../Figures/Cover.PNG
-:name: no_name
-
-Figuur
-```
-
-````
