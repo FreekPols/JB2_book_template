@@ -35,49 +35,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18.x
+
       - name: Install MyST Markdown
         run: npm install -g mystmd
+
       - name: Build HTML Assets
         run: myst build --html
-
-      # Make Typst output  
-      - name: Install Typst
-        run: |
-          typst --version
-
-      # Build PDFs step with error capture
-      - name: Build PDFs
-        id: build_pdfs
-        run: |
-          set -o pipefail
-          myst build --typst 2> >(tee build_errors.log >&2) || true
-          if [ -s build_errors.log ]; then
-            echo "### Errors during PDF build:" >> $GITHUB_STEP_SUMMARY
-            cat build_errors.log >> $GITHUB_STEP_SUMMARY
-            exit 1
-          fi
-
-      # Commit exports only if build succeeded
-      - name: Commit and push exports
-        if: success()   # only run if previous steps succeeded
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add -A exports
-          if ! git diff --cached --quiet; then
-            timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-            git commit -m "Update exports folder [Typst] (${timestamp})"
-            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
-          else
-            echo "No changes to commit"
-
 
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

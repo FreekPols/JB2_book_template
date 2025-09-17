@@ -1,10 +1,10 @@
 # JupyterBook2 Template for TUD Books
 
-This repository provides a template for creating books using [JupyterBook 2](https://jupyterbook.org/) tailored for the Delft University of Technology (TUD).
+This repository provides a template for creating books using [MystMD](https://mystmd.org/) .
 
 ## Features
 
-- Pre-configured structure for TUD book projects
+- Pre-configured structure for MystMD book projects
 - Example content and configuration files
 - Ready for deployment and customization
 
