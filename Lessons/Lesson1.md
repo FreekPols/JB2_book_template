@@ -1,10 +1,110 @@
 # Lesson 1: Make your own content
 
+## Anatomy of a Jupyter Book
+
+A Jupyter Book is a collection of files and folders that together make up the content and structure of your book. The structure of the book is specified in the `myst.yml` file, which is located in the root directory of your book. This file contains information about the title, author, and other metadata of the book, as well as documents and its structure to build the book itself.
+
+
 ## Create a chapter
 
 
-### Create a sectio
+### Create a section
 
 ### Include an equation
 
+# Your first changes via GitHub
 
+As explained in the previous chapter, your files are on GitHub and the template ensures the book is built. You can make changes directly to the files online in GitHub, and create or upload new files.
+
+Some files are already present in the template book. The folder structure is shown in {numref}`Figure {number} <fig_templatecontent>`.
+
+``` {figure} figures/templatecontent.PNG
+---
+width: 80%
+name: fig_templatecontent
+---
+The folder structure in the template book.
+```
+
+We will now make a small change to one of the files and then look at the result of that change.
+
+````{exercise} Your first change
+Navigate to the file `book/some_content/overview.md`. Then click on the pencil on the right (edit this file).
+
+Change the text after the `#`. This is the title of the file.
+
+``` {figure} figures/eersteedit.gif
+```
+
+Optionally, make other changes in the text editor and when you're done, commit your changes to the "remote repository" by clicking the green `Commit changes` button.
+
+The book will now be rebuilt. Once that's done, you can view the result on the GitHub page.
+````
+
+```{admonition} Commit summary
+:class: dropdown
+If you are working with multiple people in GitHub, or on a large project yourself, it is wise to give the commit a recognizable title (commit message) and optionally add a summary (extended description) of exactly what was changed. This way, you can detect and undo any errors early. You can also explain why certain changes were made.
+```
+
+## Adding a figure
+
+A figure sometimes says more than 1000 words...
+
+![External image](https://polslab.tnw.tudelft.nl/figures/training.JPG)
+
+If we want to add a figure to our book, we can refer to another website (as in the figure above). However, this carries the risk that the figure will no longer be visible if it is moved from its location. It is therefore better to have the figure as a local source file.
+
+So, we first need to upload a figure to GitHub and then refer to that figure in our file. (Note! This will become much easier later.)
+
+`````{exercise}
+On GitHub, under the `code` tab...
+
+1. Navigate to book/figures and click on `add file` {fa}`right-long` `Upload files`.
+```` {figure} figures/incl_fig.PNG
+---
+width: 50%
+---
+add file in the folder
+````
+2. Choose the figure you want to add (remember the file name!).
+3. Commit your changes to GitHub (the file will be uploaded).
+4. Navigate to book and open `intro.md` and click `edit this file`.
+5. Copy the code below into that file, and change the figure name to your own figure's name.
+
+````{code}
+``` {figure} figures/incl_fig.PNG
+---
+width: 50%
+name: fig_myfirstfigure
+---
+add file in the folder
+```
+````
+
+6. Commit your change and view the result on GitHub pages.
+
+`````
+
+```{warning}
+The code is case sensitive. So it matters whether your extension is .png or .PNG
+```
+
+```{tip}
+We have a page with all important [codes](./Cheatsheet.md).
+
+You can find more information about figure options [here](https://teachbooks.io/manual/basic-features/figures.html).
+```
+
+You can position figures in different places (left / center / right / margin), adjust the size, add a caption, etc. Check the documentation above and try out the different settings.
+
+## Your favorite equation
+
+```{exercise} Add an equation
+Take a look at the [Cheatsheet page](./Cheatsheet.md) to see how to add a formula and give it a try...
+```
+
+## Other changes
+
+```{exercise} Other changes
+Try making some other changes, for example by further developing the structure of the page into sections and subsections, each with some text. View the result.
+```

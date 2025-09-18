@@ -38,7 +38,7 @@ project:
     - file: index.md                      # the landing page
     - file: Content/1_intro.md
     - file: Content/2_jup_nb.ipynb
-    - file: Content/3_features.md
+    - file: Content/3_cheat_sheet.md
     - file: Content/4_pdfoutput.md
     - file: Lessons/Your_turn.md
       children:
@@ -53,6 +53,7 @@ site:
     style: ./css/custom.css
     logo: logo.svg            # path to your logo, shown top left at site
     folders: false
+    hide_authors: true
   
   actions:
     - title: report issue

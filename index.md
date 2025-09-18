@@ -1,5 +1,5 @@
 ---
-title: TUD JB2 Template
+title: Jupyter Book 2 Headstart Template
 site:
   hide_outline: true
   hide_toc: true
@@ -8,7 +8,7 @@ site:
 
 <div style="text-align: center">
 
-# Template
+# Jupyter Book 2 Headstart Template
 
 </div>
 
@@ -17,3 +17,8 @@ site:
 :align: center
 ```
 
+<div style="text-align: center", font-size: 1.2em>
+
+    Freek Pols, Luuk Fröling, Robert Lanzafame, Kirstie Whitaker
+
+</div>

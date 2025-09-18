@@ -1,4 +1,4 @@
-# JB 2 Template
+# pdfoutput
 
 - description of template
 - run workflow

@@ -1,12 +1,5 @@
 # Markdown (Cheatsheet)
 
-Markdown is a simple markup language: plain text that is *formatted* with small pieces of 'code'. This text can then be quickly exported to various other formats such as PDF, Word, HTML, etc.
-
-```{figure} ../Figures/MyST.PNG
-:width:80%
-
-Some caption
-```
 
 ````{tab-set}
 :::{tab-item} list
