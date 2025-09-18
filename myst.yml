@@ -39,7 +39,7 @@ project:
     - file: Content/2_jup_nb.ipynb
     - file: Content/3_cheat_sheet.md
     - file: Content/4_pdfoutput.md
-    - file: Lessons/Your_turn.md          # dropdown menu
+    - file: Content/Lessons/Your_turn.md          # dropdown menu
       children:
         - file: Content/Lessons/Lesson0.md
         - file: Content/Lessons/Lesson1.md
