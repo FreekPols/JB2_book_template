@@ -1,31 +1,25 @@
-# Markdown (Cheatsheet)
+# Markdown (Cheat sheet)
+
+Below is a set of frequently used markdown commands for Jupyter Book 2 made with MyST. A good practice is to download the source file by clicking the download icon at the top right of this page and inspect the code. 
 
 
-````{tab-set}
-:::{tab-item} list
-* This is a reference to a figure like {numref}`Figure {number} <fig_sunset>`
-* This is a reference to a table like {numref}`Table {number} <tl_sanctions>`
-* This is a reference to equation {eq}`eq:Newton`
-* This is a [hyperlink](https://nos.nl)
-:::
-:::{tab-item} syntax
-```markdown
-* This is a reference to a figure like {numref}`Figure {number} <fig_sunset>`
-* This is a reference to a table like {numref}`Table {number} <tl_sanctions>`
-* This is a reference to equation {eq}`eq:Newton`
-* This is a [hyperlink](https://nos.nl)
-```
-:::
-````
-A Jupyter Book 2 made with MyST requires a collection of markdown and Jupyter notebooks, which can then be exported to PDF, HTML, and even Word.
-
-## Structure
-We can distinguish between two structures: that of the book's content (a collection of different documents), and the (internal) structure of the chapters.
+## Book structure
+We can distinguish between two structures: that of the book's content (a collection of different documents), and the (internal) structure of the chapters which consists of content structured in sections and subsections.
 
 ### Table of Contents
-The software we use automatically builds a table of contents (ToC) in alphabetical order. But you can also specify the ToC yourself. This is best done offline (`jupyter init --toc`), see the [MyST documentation](https://mystmd.org/guide/table-of-contents#toc-format-legacy).
+In the `myst.yml` file, you can specify the structure of the book as shown in {numref}`fig_toc`. Here you can indicate which files belong to the book and in what order. You can also create dropdown menus. When not specifying a ToC, all files are automatically included in alphabetical order.
 
-### Chapters    
+```{figure} Figures/toc.png
+:width: 70%
+:align: center
+:name: fig_toc
+
+The Table of Contents (ToC) for this book.
+```
+
+If you create a new file, you need to add it to the `myst.yml` file to include it in the book.
+
+### Chapters, sections and subsections    
 To distinguish between chapter, section, and subsection (and further), use a number of `#` symbols, as shown below.
 
 ```markdown
@@ -38,13 +32,31 @@ To distinguish between chapter, section, and subsection (and further), use a num
 Do not number your chapters and sections! This happens automatically.
 ```
 
+```{note}
+Files below `children` in the `myst.yml` file are considered sections, even when the heading has a single `#`. 
+```
+
+## Basic Formatting
+Markdown is a markup language where text formatting is done with small pieces of code (just like HTML). This is a table with some frequently used formatting options.
+
+| Element | Syntax | Example | 
+| --- | --- | --- |
+| Bold | `**bold text**` | **Bold** |
+| Italic | `*italics*` | *Italics* |
+| Emphasis | `***emphasis***` | ***emphasis*** |
+| Inline Formula | `$F = m \cdot a$` | $F = m \cdot a$ |
+| Footnote | ` - A footnote reference[^myref]` <br> `[^myref]: This is an auto-numbered footnote definition.` | - A footnote reference[^myref] | 
+ 
+[^myref]: This is an auto-numbered footnote definition.
+
+
 You can create a new line by either a hard enter and a blank line, a `\` at the end of the line and enter, or two spaces at the end of the line.
 
 ### New Line
 ::::{tab-set}
 :::{tab-item} list
 A new line with double space.  
-A new line with a `\`.\  
+A new line with a `\`.   
 No new line with just a hard enter and blank line.
 
 End of exercise.
@@ -62,17 +74,24 @@ And an example if the previous line does not end with the above.
 :::
 ::::
 
-## Basic Formatting
-Markdown is a markup language where text formatting is done with small pieces of code (just like HTML).
 
-| Element | Syntax | Example | 
-| --- | --- | --- |
-| Bold | `**bold text**` | **Bold** |
-| Italic | `*italics*` | *Italics* |
-| Emphasis | `***emphasis***` | ***emphasis*** |
-| Inline Formula | `$F = m \cdot a$` | $F = m \cdot a$ |
-| Super and subscript | ``H{sub}`2`O, and 4{sup}`th` of July`` | H{sub}`2`O, and 4{sup}`th` of July|
-| Footnote | ` - A footnote reference[^myref] \ [^myref]: This is an auto-numbered footnote definition.`|- A footnote reference[^myref] \ [^myref]: This is an auto-numbered footnote definition.| 
+### Lists
+````{tab-set}
+:::{tab-item} list
+* This is a reference to a figure like {numref}`Figure {number} <fig_sunset>`
+* This is a reference to a table like {numref}`Table {number} <tl_sanctions>`
+* This is a reference to equation {eq}`eq:Newton`
+* This is a [hyperlink](https://nos.nl)
+:::
+:::{tab-item} syntax
+```markdown
+* This is a reference to a figure like {numref}`Figure {number} <fig_sunset>`
+* This is a reference to a table like {numref}`Table {number} <tl_sanctions>`
+* This is a reference to equation {eq}`eq:Newton`
+* This is a [hyperlink](https://nos.nl)
+```
+:::
+````
 
 ### Lists Option 1
 ::::{tab-set}
@@ -144,7 +163,7 @@ $$ F_{res} = m \cdot a$$ (eq:Newton)
 
 Where labeled equations, such as {eq}`eq:Newton`, can be referenced.
 
-`$$ Equation $$`
+`$$ Equation $$ (<label>)`
 
 But you can also include inline equations like this: $s=v_{avg}t$. Use a single dollar sign before and after: `$ Equation $`
 
@@ -335,6 +354,9 @@ Embedded YT videos are not included in the PDF. A solution could be to include a
 
 (sec-ref)=
 ## References
+
+Links ... 
+DOI ...
 
 ::::{tab-set}
 :::{tab-item} list

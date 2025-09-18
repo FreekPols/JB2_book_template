@@ -1,23 +1,17 @@
-# pdfoutput
+# Export to pdf
 
-- description of template
-- run workflow
-- see output
- 
+You can export your book to a pdf in two ways: using LaTeX or Typst. Both have their advantages and disadvantages. For this template we made an automated GH action that builds the pdf for you utilizing Typst.
 
-## PDF met Latex of Typst 
+## Specify output in myst.yml
+We specified in the `myst.yml` file that we want to export to pdf using Typst. You can also choose LaTeX. See the `myst.yml` file, or {numref}`fig_export` for the syntax.
 
-Om aan te geven welk type PDF je wilt bouwen, zet je dit in je `myst.yml` bestand onder `exports`.  
-Bijvoorbeeld:
+```{figure} Figures/export.png
+:width: 70%
+:align: center
+:name: fig_export
 
-```yaml
-exports:
-  - format: pdf      # Voor LaTeX export
-    output: exports/book.pdf
-  - format: typst    # Voor Typst export
-    output: exports/book.pdf
+Example of the export section in the `myst.yml` file.
 ```
 
-Ga naar Actions > klik op "Myst PDF Builder [LaTeX]" of "Myst PDF Builder [Typst]" > klik op "Run workflow" > klik op "Run workflow" in dropdown.
+Using the export option, a pdf will be generated in the `Exports` folder every time you push to GitHub. You can specify the [output template](https://github.com/myst-templates). We won't go into detail here, but you can find more information [here](https://mystmd.org/guide/creating-pdf-documents).
 
-Een eventuele error voor de Typst action komt in de summary te staan. 

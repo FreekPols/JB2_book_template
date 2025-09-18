@@ -9,7 +9,11 @@ This template:
 - includes a GitHub Action to automatically build and deploy your book online and as a pdf
 
 
-Hence, the template allows you to engage with JB2 without installing any software on your own computer. You only need a web browser and a GitHub account. The template and its content is not meant as a replacement of the documentation already available on the [Jupyter Book 2 website](https://next.jupyterbook.org/) and the [MyST website](https://mystmd.org/guide). 
+Hence, the template allows you to engage with JB2 without installing any software on your own computer. You only need a web browser and a GitHub account (we provide details on how to work locally on your own computer). 
+
+```{note}
+The template and its content are not meant as a replacement of the documentation already available on the [Jupyter Book 2 website](https://next.jupyterbook.org/) and the [MyST website](https://mystmd.org/guide). 
+```
 
 ```{warning} Enjoy!
 Once you start building JB2 books, it is likely you will get hooked!
