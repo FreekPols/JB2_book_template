@@ -3,9 +3,9 @@
 This is the *Jupyter Book 2 Headstart Template,* designed to quickly and easily produce your own online interactive textbook as well as a high quality pdf enabled with Typst using the [Jupyter Book 2](https://next.jupyterbook.org/) technology.
 
 This template:
-- provides a ready-to-use Jupyter Book 2 structure
+- provides a ready-to-use Jupyter Book 2 structure for creating an online book (i.e., website)
 - is pre-configured to produce a high quality pdf using Typst
-- includes a number of lessons to get you started
+- includes a number of lessons to get you started understanding key components of a book and how to edit it 
 - includes a GitHub Action to automatically build and deploy your book online and as a pdf
 
 
