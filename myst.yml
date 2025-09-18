@@ -5,11 +5,11 @@ project:
   title: Jupyter Book 2 Headstart Template
   # description:
   # keywords: []
-  authors: 
-    - Freek Pols
-    - Luuk Fröling
-    - Robert Lanzafame
-    - Kirstie Whitaker
+  authors:
+    - name: Freek Pols
+    - name: Luuk Fröling
+    - name: Robert Lanzafame
+    - name: Kirstie Whitaker
 
   # abstract: Optional
   date: 2025-17-09
