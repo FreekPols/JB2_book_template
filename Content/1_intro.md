@@ -11,6 +11,10 @@ This template:
 
 Hence, the template allows you to engage with JB2 without installing any software on your own computer. You only need a web browser and a GitHub account (we provide details on how to work locally on your own computer). 
 
+```{warning} Work in Progress
+Materials in this document are under construction; the contents and order of the information and tasks may change, depending on workshop needs and feedback.
+```
+
 ```{note}
 The template is and its content are not meant as a replacement of the documentation already available on the [Jupyter Book 2 website](https://next.jupyterbook.org/) and the [MyST website](https://mystmd.org/guide). It is designed to support new users of Jupyter Book 2 and MystMD, in particular for use in workshop settings where participants may not have time or ability to install the required software on a personal computer.
 ```
