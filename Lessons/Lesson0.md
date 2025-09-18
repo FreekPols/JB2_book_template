@@ -21,7 +21,19 @@ Follow these steps to create your own repository from the template.
 6. Check the box **Use your GitHub Pages website**.
 7. Go to `actions` in the topmenu, click on the (red) `initial commit` and click `re-run all jobs`
 
+
 The book will now be deployed again - where now it can actually load GitHub pages. 
+
+
+``` {figure} Figures/2ndpart.mp4
+
+Follow these steps to create your own GHpages from the template.
+```
+
+
+
+8. Use the book link  (`code` $\rightarrow$ below **About**) to your Github page where the book is hosted.
+9. The output resembles {numref}`Figuur {number} <fig_startscreen>`.
 
 ```{figure} Figures/startscreen.png
 ---
@@ -30,9 +42,6 @@ width: 70%
 ---
 Once the book has been deploy, you can visit your site which looks like this.
 ```
-
-8. Use the book link  (`code` $\rightarrow$ below **About**) to your Github page where the book is hosted.
-9. The output resembles {numref}`Figuur {number} <fig_startscreen>`.
 
 
 ## Something about software
