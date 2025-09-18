@@ -35,18 +35,18 @@ project:
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   toc:    
     - file: index.md                      # the landing page
-    - file: Content/1_intro.md
-    - file: Content/2_jup_nb.ipynb
-    - file: Content/3_cheat_sheet.md
-    - file: Content/4_pdfoutput.md
-    - file: Content/Lessons/Your_turn.md          # dropdown menu
+    - file: content/1_intro.md
+    - file: content/2_jup_nb.ipynb
+    - file: content/3_cheat_sheet.md
+    - file: content/4_pdfoutput.md
+    - file: content/lessons/Your_turn.md          # dropdown menu
       children:
-        - file: Content/Lessons/Lesson0.md
-        - file: Content/Lessons/Lesson1.md
-        - file: Content/Lessons/Lesson2.md
-        - file: Content/Lessons/Lesson3.ipynb
-        - file: Content/Lessons/Lesson4.md
-    - file: Content/Software.md
+        - file: content/lessons/Lesson0.md
+        - file: content/lessons/Lesson1.md
+        - file: content/lessons/Lesson2.md
+        - file: content/lessons/Lesson3.ipynb
+        - file: content/lessons/Lesson4.md
+    - file: content/Software.md
     
 site:
   template: book-theme

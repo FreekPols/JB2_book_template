@@ -9,7 +9,7 @@ We can distinguish between two structures: that of the book's content (a collect
 ### Table of Contents
 In the `myst.yml` file, you can specify the structure of the book as shown in {numref}`fig_toc`. Here you can indicate which files belong to the book and in what order. You can also create dropdown menus. When not specifying a ToC, all files are automatically included in alphabetical order.
 
-```{figure} Figures/toc.png
+```{figure} figures/toc.png
 :width: 70%
 :align: center
 :name: fig_toc

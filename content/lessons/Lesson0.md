@@ -12,7 +12,7 @@ Follow these instruction to use this template for your own book.
 3. Choose a proper name of your repository (this will be also part of your URL!) and choose the option `public`.
 4. In your repository, click on `settings` and in the left menu on Pages and choose `Github actions`
 
-``` {figure} Figures/start.mp4
+``` {figure} figures/start.mp4
 :name: vid_1
 
 Follow these steps to create your own repository from the template.
@@ -26,7 +26,7 @@ Follow these steps to create your own repository from the template.
 The book will now be deployed again - where now it can actually load GitHub pages. 
 
 
-``` {figure} Figures/2ndpart.mp4
+``` {figure} figures/2ndpart.mp4
 :name: vid_2
 
 Follow these steps to create your own GHpages from the template.
@@ -37,7 +37,7 @@ Follow these steps to create your own GHpages from the template.
 8. Use the book link  (`code` $\rightarrow$ below **About**) to your Github page where the book is hosted.
 9. The output resembles {numref}`Figuur {number} <fig_startscreen>`.
 
-```{figure} Figures/startscreen.png
+```{figure} figures/startscreen.png
 :name: fig_startscreen
 :width: 100%
 
@@ -56,7 +56,7 @@ Your GitHub repository looks like the one shown in {numref}`fig_folderstructure`
 - css: the folder which includes the custom css file to change the layout of your book
 - pdf_template_book: the folder which includes the typst template to create a pdf export of your book
 
-```{figure} Figures/Folderstructure.png
+```{figure} figures/Folderstructure.png
 :name: fig_folderstructure
 :width: 100%
 
@@ -74,7 +74,7 @@ It is possible to work directly in the GitHub environment: no need to install an
 2. Click on the drop down icon next to the pencil icon and choose `open in github.dev` This will start the GitHub development environment where you can edit the files directly in your browser.
 3. Edit the file by replacing the names with your own and commit your changes (see {numref}`vid_3`).
 
-```{figure} Figures/GHdev.mp4
+```{figure} figures/GHdev.mp4
 :name: vid_3
 
 Working directly in the GitHub development environment.
