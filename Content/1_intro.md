@@ -1,6 +1,6 @@
 # Introduction
 
-This is the *Jupyter Book 2 Headstart Template* to quickly and easily produce your own online interactive textbook as well as a high quality pdf enabled with Typst using the [Jupyter Book 2](https://next.jupyterbook.org/) technology.
+This is the *Jupyter Book 2 Headstart Template,* designed to quickly and easily produce your own online interactive textbook as well as a high quality pdf enabled with Typst using the [Jupyter Book 2](https://next.jupyterbook.org/) technology.
 
 This template:
 - provides a ready-to-use Jupyter Book 2 structure
@@ -12,10 +12,10 @@ This template:
 Hence, the template allows you to engage with JB2 without installing any software on your own computer. You only need a web browser and a GitHub account (we provide details on how to work locally on your own computer). 
 
 ```{note}
-The template and its content are not meant as a replacement of the documentation already available on the [Jupyter Book 2 website](https://next.jupyterbook.org/) and the [MyST website](https://mystmd.org/guide). 
+The template is and its content are not meant as a replacement of the documentation already available on the [Jupyter Book 2 website](https://next.jupyterbook.org/) and the [MyST website](https://mystmd.org/guide). It is designed to support new users of Jupyter Book 2 and MystMD, in particular for use in workshop settings where participants may not have time or ability to install the required software on a personal computer.
 ```
 
-```{warning} Enjoy!
+```{warning} Enjoyment Warning!
 Once you start building JB2 books, it is likely you will get hooked!
 ```
 
