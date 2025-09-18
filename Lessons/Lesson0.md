@@ -13,6 +13,7 @@ Follow these instruction to use this template for your own book.
 4. In your repository, click on `settings` and in the left menu on Pages and choose `Github actions`
 
 ``` {figure} Figures/start.mp4
+:name: vid_1
 
 Follow these steps to create your own repository from the template.
 ```
@@ -26,6 +27,7 @@ The book will now be deployed again - where now it can actually load GitHub page
 
 
 ``` {figure} Figures/2ndpart.mp4
+:name: vid_2
 
 Follow these steps to create your own GHpages from the template.
 ```
@@ -36,34 +38,15 @@ Follow these steps to create your own GHpages from the template.
 9. The output resembles {numref}`Figuur {number} <fig_startscreen>`.
 
 ```{figure} Figures/startscreen.png
----
-name: fig_startscreen
-width: 70%
----
+:name: fig_startscreen
+:width: 100%
+
 Once the book has been deploy, you can visit your site which looks like this.
 ```
 
 
-## Something about software
+## Working in the GitHub development environment
 
-## Something about working in GH
 
-## Clone template 
 
-## Setup actions
-
-## Understanding the folder structure
-
-12.1. Randvoorwaarden
-Er zijn een paar dingen die je moet weten / hebben wil je aan de slag gaan met het maken van een online boek:
-
- Programmeer ervaring is niet nodig, maar maakt het een en ander wel makkelijker.
-
- Een account bij Github
-
- Software om je code in te schrijven, zoals VSC
-
- Een beetje geduld, het is een steile leercurve.
-
-Klaar? Laten we beginnen..
 

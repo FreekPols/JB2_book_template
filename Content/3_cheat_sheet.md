@@ -53,45 +53,63 @@ Markdown is a markup language where text formatting is done with small pieces of
 You can create a new line by either a hard enter and a blank line, a `\` at the end of the line and enter, or two spaces at the end of the line.
 
 ### New Line
-::::{tab-set}
-:::{tab-item} list
-A new line with double space.  
-A new line with a `\`.   
-No new line with just a hard enter and blank line.
 
-End of exercise.
-And an example if the previous line does not end with the above.
+Generally, in markdown, a single hard enter does not create a new line. You need to use one of the options below.
+
+::::{tab-set}
+:::{tab-item} ways for a new line
+A new line with double space.  
+A new line with a `\`.\
+A new line with a hard enter and blank line.
+
+No new line with just a hard enter and text on the next line.
+Like this
 :::
 :::{tab-item} syntax
 ```markdown
 A new line with double space.  
-A new line with a `\`.\  
+A new line with a `\`.\
 A new line with a hard enter and blank line.
 
-End of exercise.
-And an example if the previous line does not end with the above.
+No new line with just a hard enter and text on the next line.
+Like this
 ```
 :::
 ::::
 
+### Equations & Symbols
 
-### Lists
-````{tab-set}
-:::{tab-item} list
-* This is a reference to a figure like {numref}`Figure {number} <fig_sunset>`
-* This is a reference to a table like {numref}`Table {number} <tl_sanctions>`
-* This is a reference to equation {eq}`eq:Newton`
-* This is a [hyperlink](https://nos.nl)
-:::
-:::{tab-item} syntax
-```markdown
-* This is a reference to a figure like {numref}`Figure {number} <fig_sunset>`
-* This is a reference to a table like {numref}`Table {number} <tl_sanctions>`
-* This is a reference to equation {eq}`eq:Newton`
-* This is a [hyperlink](https://nos.nl)
-```
-:::
-````
+For STEM subjects, mathematical equations and symbols ($\Delta \lambda$) are essential. You can include equations in JB's. What is possible in LaTeX is also possible in JB, for example:
+
+$$ F_{res} = m \cdot a$$ (eq:Newton)
+
+Where labeled equations, such as {eq}`eq:Newton`, can be referenced.
+
+`$$ Equation $$ (<label>)`
+
+But you can also include inline equations like this: $s=v_{avg}t$. Use a single dollar sign before and after: `$ Equation $`
+
+|Name|Script|Symbols|
+|---|---|---|
+|root|`\sqrt{4}`|$\sqrt{4}$|
+|power|`^{2x}`|$^{2x}$|
+|fraction|`\frac{2}{3}`|$\frac{2}{3}$|
+|subscript|`_{avg}`|$_{avg}$|
+|superscript|`^{N}`|$^{N}$|
+|multiply|`\cdot`|$\cdot$|
+
+Some examples:
+|Name|Script|Output|
+|---|---|---|
+|Derivative|`\frac{\Delta f}{\Delta t}`|$\frac{\Delta f}{\Delta t}$|
+|Integral|`\int_a^b dx`|$\int_a^b dx$|
+|sine|`sin(x)`|$sin(x)$|
+
+More: https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+
+## Lists & tables
+
 
 ### Lists Option 1
 ::::{tab-set}
@@ -125,138 +143,8 @@ And an example if the previous line does not end with the above.
 :::
 ::::
 
-### Tabs
 
-```markdown
-::::{tab-set}
-:::{tab-item} Tab 1
-Text in tab 1
-:::
-
-:::{tab-item} Tab 2
-Text in tab 2
-:::
-::::
-```
-
-### Checklists 
-::::{tab-set}
-:::{tab-item} list
-- [x] Create a markdown cheat sheet
-- [x] Publish online
-- [] Let others test
-:::
-:::{tab-item} syntax
-```markdown
-- [x] Create a markdown cheat sheet
-- [x] Publish online
-- [] Let others test
-```
-:::
-::::
-
-## Formulas
-
-For STEM subjects, mathematical equations are essential. You can also include equations in JB's. What is possible in LaTeX is also possible in JB, for example:
-
-$$ F_{res} = m \cdot a$$ (eq:Newton)
-
-Where labeled equations, such as {eq}`eq:Newton`, can be referenced.
-
-`$$ Equation $$ (<label>)`
-
-But you can also include inline equations like this: $s=v_{avg}t$. Use a single dollar sign before and after: `$ Equation $`
-
-|Name|Script|Symbols|
-|---|---|---|
-|root|`\sqrt{4}`|$\sqrt{4}$|
-|power|`^{2x}`|$^{2x}$|
-|fraction|`\frac{2}{3}`|$\frac{2}{3}$|
-|subscript|`_{avg}`|$_{avg}$|
-|superscript|`^{N}`|$^{N}$|
-|multiply|`\cdot`|$\cdot$|
-
-Some examples:
-|Name|Script|Output|
-|---|---|---|
-|Derivative|`\frac{\Delta f}{\Delta t}`|$\frac{\Delta f}{\Delta t}$|
-|Integral|`\int_a^b dx`|$\int_a^b dx$|
-|sine|`sin(x)`|$sin(x)$|
-
-More: https://en.wikibooks.org/wiki/LaTeX/Mathematics
-
-## Admonitions
-You can add special blocks that are highlighted in the text. See, for example, the warning below.
-
-```{warning}
-Here is a warning
-```
-
-There are different variants such as:
-* tip 
-* admonition 
-* warning 
-* note 
-* objective 
-* see also ...
-
-```{tip} The golden...
-Exercises are a special kind of admonition.
-```
-
-### Exercises
-```{exercise} Exercise 1
-:label: ex_opdr_1
-
-Calculate $4+2$
-```
-
-```{solution} ex_opdr_1
-:class: dropdown
-
-6
-```
-
-## Figures
-A site/book naturally needs figures. There are roughly two ways to add a figure:
-
-*Quick figure, without formatting options*
-
-| Quick figure | `![](link to figure)` |
-
-*Better way with more control:*
-
-::::{tab-set}
-:::{tab-item} Figures
-
-```{figure} https://github.com/rowanc1/pics/blob/main/sunset.png
-:label: fig_sunset
-:width: 70%
-:align: center
-
-With a nice caption
-```
-
-:::
-
-:::{tab-item} MyST Syntax
-
-````markdown
-```{figure} https://github.com/rowanc1/pics/blob/main/sunset.png
-:label: fig1
-:width: 70%
-:align: center
-
-With a nice caption
-```
-````
-
-:::
-::::
-
-Here we used figures hosted online, but you can also add figures to a folder (e.g., called *Figures*), and then use a relative path.
-
-## Tables
+### Tables
 
 Tables are created with the separator `|`
 
@@ -324,6 +212,129 @@ Or via ...
 
 Method 2 has the advantage of allowing references to {numref}`Table {number} <tl_sanctions>`
 
+### Tabs
+
+```markdown
+::::{tab-set}
+:::{tab-item} Tab 1
+Text in tab 1
+:::
+
+:::{tab-item} Tab 2
+Text in tab 2
+:::
+::::
+```
+Will create this tab:
+
+::::{tab-set}
+:::{tab-item} Tab 1
+Text in tab 1
+:::
+
+:::{tab-item} Tab 2
+Text in tab 2
+:::
+::::
+
+### Checklists 
+::::{tab-set}
+:::{tab-item} list
+- [x] Create a markdown cheat sheet
+- [x] Publish online
+- [] Let others test
+:::
+:::{tab-item} syntax
+```markdown
+- [x] Create a markdown cheat sheet
+- [x] Publish online
+- [] Let others test
+```
+:::
+::::
+
+
+## Admonitions
+You can add special blocks that are highlighted in the text. See, for example, the warning below.
+
+```{warning}
+Here is a warning
+```
+
+Created using: 
+
+````markdown
+```{warning}    
+Here is a warning
+```
+````
+
+There are different variants such as:
+* tip 
+* admonition 
+* warning 
+* note 
+* objective 
+* see also ...
+
+```{tip} The golden...
+Exercises are a special kind of admonition.
+```
+
+### Exercises
+A special case is the exercises which can be labeled and can come with a solution that is linked to the exercise: 
+```{exercise} Exercise 1
+:label: ex_opdr_1
+
+Calculate $4+2$
+```
+
+```{solution} ex_opdr_1
+:class: dropdown
+
+6
+```
+
+## Figures
+A site/book naturally needs figures. There are roughly two ways to add a figure:
+
+*Quick figure, without formatting options*
+
+| Quick figure | `![](link to figure)` |
+
+*Better way with more control:*
+
+::::{tab-set}
+:::{tab-item} Figures
+
+```{figure} https://github.com/rowanc1/pics/blob/main/sunset.png
+:label: fig_sunset
+:width: 70%
+:align: center
+
+With a nice caption
+```
+
+:::
+
+:::{tab-item} MyST Syntax
+
+````markdown
+```{figure} https://github.com/rowanc1/pics/blob/main/sunset.png
+:label: fig1
+:width: 70%
+:align: center
+
+With a nice caption
+```
+````
+
+:::
+::::
+
+Here we used figures hosted online, but you can also add figures to a folder (e.g., called *Figures*), and then use a relative path.
+
+
 ## YouTube
 To embed YouTube videos on the site, you need the embed YT link. The code is then:
 
@@ -353,10 +364,13 @@ Embedded YT videos are not included in the PDF. A solution could be to include a
 ```
 
 (sec-ref)=
-## References
+## References & Links
 
-Links ... 
-DOI ...
+You can included [links](https://interactivetextbooks.tudelft.nl/showthephysics) like this. With the markdown syntax: `[text](link)`.
+
+It also possible to include reference through the reference.bib file, or directly by including the DOI: [](https://doi.org/10.1088/1361-6552/abf208) (syntax: `[](https://doi.org/10.1088/1361-6552/abf208)`) or [@doi:10.1088/1361-6552/abf208] (syntax: `[@doi:10.1088/1361-6552/abf208]`).
+
+Below a few examples of links and references to labeled items.
 
 ::::{tab-set}
 :::{tab-item} list

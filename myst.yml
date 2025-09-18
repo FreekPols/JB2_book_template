@@ -44,6 +44,9 @@ project:
         - file: Lessons/Lesson0.md
         - file: Lessons/Lesson1.md
         - file: Lessons/Lesson2.md
+        - file: Lessons/Lesson3.ipynb
+        - file: Lessons/Lesson4.md
+    - file: Lessons/Software.md
     
 site:
   template: book-theme

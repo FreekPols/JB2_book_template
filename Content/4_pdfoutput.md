@@ -15,3 +15,6 @@ Example of the export section in the `myst.yml` file.
 
 Using the export option, a pdf will be generated in the `Exports` folder every time you push to GitHub. You can specify the [output template](https://github.com/myst-templates). We won't go into detail here, but you can find more information [here](https://mystmd.org/guide/creating-pdf-documents).
 
+```{note}
+We included a basic Typst book template  and a GitHub action that build the pdf. However, this only works when there are no errors in the markdown files. For instance, it breaks when figures are missing.
+```
