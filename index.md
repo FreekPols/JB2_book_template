@@ -17,6 +17,10 @@ site:
 :align: center
 ```
 
+```{warning} Work in Progress
+Materials in this document are under construction; the contents and order of the information and tasks may change, depending on workshop needs and feedback.
+```
+
 <div style="text-align: center", font-size: 1.2em>
 
     Freek Pols, Luuk Fröling, Robert Lanzafame, Kirstie Whitaker
