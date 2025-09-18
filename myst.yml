@@ -41,12 +41,12 @@ project:
     - file: Content/4_pdfoutput.md
     - file: Lessons/Your_turn.md          # dropdown menu
       children:
-        - file: Lessons/Lesson0.md
-        - file: Lessons/Lesson1.md
-        - file: Lessons/Lesson2.md
-        - file: Lessons/Lesson3.ipynb
-        - file: Lessons/Lesson4.md
-    - file: Lessons/Software.md
+        - file: Content/Lessons/Lesson0.md
+        - file: Content/Lessons/Lesson1.md
+        - file: Content/Lessons/Lesson2.md
+        - file: Content/Lessons/Lesson3.ipynb
+        - file: Content/Lessons/Lesson4.md
+    - file: Content/Software.md
     
 site:
   template: book-theme

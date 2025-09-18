@@ -3,8 +3,8 @@
 This lesson gives you a headstart in creating your own online book using GitHub and the template repository [JB2_book_template](https://github.com/FreekPols/JB2_book_template).
 
 
-
 ## Set up your own repository
+
 Follow these instruction to use this template for your own book.
 
 1. Go to this [repository](https://github.com/FreekPols/JB2_book_template.git)
@@ -44,9 +44,30 @@ Follow these steps to create your own GHpages from the template.
 Once the book has been deploy, you can visit your site which looks like this.
 ```
 
+## Repo folder structure
+
+Your GitHub repository looks like the one shown in {numref}`fig_folderstructure`. We have the following subfolders:
+
+- Content: the source files of your book (in markdown or jupyter notebook format)
+- Exports: the folder which may include a pdf export of your book
+- Figures: the folder which includes figures for your book (*could be in content folder*)
+- Lessons: the folder which includes the lessons of this tutorial (*could be in Content folder*)
+- .github/workflows: the folder which includes the GitHub actions (automated workflows) to build and deploy your book
+- css: the folder which includes the custom css file to change the layout of your book
+- pdf_template_book: the folder which includes the typst template to create a pdf export of your book
+
+```{figure} Figures/Folderstructure.png
+:name: fig_folderstructure
+:width: 100%
+
+Once the book has been deploy, you can visit your site which looks like this.
+```
+
+
+
 
 ## Working in the GitHub development environment
 
-
+It is possible to work directly in the GitHub environment: no need to install anything as this is already covered with the GH actions that we created. 
 
 

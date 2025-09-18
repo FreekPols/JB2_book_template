@@ -12,7 +12,7 @@ site:
 
 </div>
 
-```{figure} Figures/Cover.PNG
+```{figure} pdf_template_book/Cover.PNG
 :width: 80%
 :align: center
 ```
