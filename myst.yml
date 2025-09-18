@@ -22,7 +22,7 @@ project:
   exports:
     - format: typst
       template: ./pdf_template_book               #plain_typst_book
-      output: Exports/book.pdf
+      output: exports/book.pdf
       id: output-pdf
   downloads:
     - id: output-pdf
