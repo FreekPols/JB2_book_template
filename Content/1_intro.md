@@ -22,10 +22,3 @@ The template is and its content are not meant as a replacement of the documentat
 ```{warning} Enjoyment Warning!
 Once you start building JB2 books, it is likely you will get hooked!
 ```
-
-
-
-
-
-
-
