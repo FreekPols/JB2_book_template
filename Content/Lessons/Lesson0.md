@@ -70,4 +70,14 @@ Once the book has been deploy, you can visit your site which looks like this.
 
 It is possible to work directly in the GitHub environment: no need to install anything as this is already covered with the GH actions that we created. 
 
+1. Click on the index.md file in the Content folder
+2. Click on the drop down icon next to the pencil icon and choose `open in github.dev` This will start the GitHub development environment where you can edit the files directly in your browser.
+3. Edit the file by replacing the names with your own and commit your changes (see {numref}`vid_3`).
 
+```{figure} Figures/GHdev.mp4
+:name: vid_3
+
+Working directly in the GitHub development environment.
+```
+
+Now, if you go back to your repository and click on `actions` you will see that the workflow is running to build and deploy your book. After a few minutes, you can refresh your book page and see your changes live!
