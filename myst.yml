@@ -21,7 +21,7 @@ project:
   # exports and downloads
   exports:
     - format: typst
-      template: ./pdf_template_book               #plain_typst_book
+      template: https://github.com/FreekPols/plain_typst_book.git             #plain_typst_book
       output: exports/book.pdf
       id: output-pdf
   downloads:
