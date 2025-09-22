@@ -242,13 +242,13 @@ Text in tab 2
 :::{tab-item} list
 - [x] Create a markdown cheat sheet
 - [x] Publish online
-- [] Let others test
+- [ ] Let others test
 :::
 :::{tab-item} syntax
 ```markdown
 - [x] Create a markdown cheat sheet
 - [x] Publish online
-- [] Let others test
+- [ ] Let others test
 ```
 :::
 ::::
