@@ -212,6 +212,29 @@ Or via ...
 
 Method 2 has the advantage of allowing references to {numref}`Table {number} <tl_sanctions>`
 
+### Cards
+
+::::{tab-set}
+:::{tab-item}
+````markdown
+```{card} Title
+:header: some header
+:footer: footer
+
+Some content
+```
+````
+:::
+:::{tab-item}
+```{card} Title
+:header: some header
+:footer: footer
+
+Some content
+```
+:::
+::::
+
 ### Tabs
 
 ```markdown
